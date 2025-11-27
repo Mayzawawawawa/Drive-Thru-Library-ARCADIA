@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Arcadia</title>
+
+    <link rel="stylesheet" href="../CSS/Login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Firebase + Login JS -->
+    <script type="module" src="../JS/Firebase.js"></script>
+    <script type="module" src="../JS/Login.js"></script>
+</head>
+
+<body>
+    <div class="auth-container">
+        <h2>Welcome Admin Arcadia</h2>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email_admin">Email</label>
+                <input type="email" id="email_admin" placeholder="Masukkan email anda disini" required />
+            </div>
+
+            <div class="form-group password-wrapper">
+                <label for="password_admin">Password</label>
+                <input type="password" id="password_admin" placeholder="Masukkan password" required>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+
+        <p>Or login with:</p>
+        <div class="social-login">
+            <button class="google">Google</button>
+            <button class="facebook">Facebook</button>
+            <button class="apple">Apple</button>
+        </div>
+    </div>
+
+    <div class="success-notification" id="successNotification">
+        <i class="fas fa-check-circle"></i>
+        <span>Login successful! Redirecting...</span>
+    </div>
+
+</body>
+</html>

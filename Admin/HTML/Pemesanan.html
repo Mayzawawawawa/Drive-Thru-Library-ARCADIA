@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Pemesanan Buku</title>
+    <link rel="stylesheet" href="../CSS/Pemesanan.css">
+    <script src="https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.6.0/firebase-database.js"></script>
+    <script src="../JS/Firebase.js"></script>
+    <script src="Pemesanan.js"></script>
+</head>
+<body>
+
+    <h1>📚 Daftar Peminjaman Buku</h1>
+
+    <table id="bookingTable">
+        <thead>
+            <tr>
+                <th>Nama Peminjam</th>
+                <th>Email</th>
+                <th>Buku</th>
+                <th>Waktu Ambil</th>
+                <th>Waktu Kembali</th>
+            </tr>
+        </thead>
+        <tbody id="bookingBody">
+            <!-- Data dari Firebase akan masuk di sini -->
+        </tbody>
+    </table>
+
+
+</body>
+</html>
