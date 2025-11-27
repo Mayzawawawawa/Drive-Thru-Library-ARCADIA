@@ -1,0 +1,86 @@
+* { margin: 1; padding: 0; box-sizing: border-box; font-family: "Inter", sans-serif; }
+
+body {
+display: flex; justify-content: center; align-items: center; height: 100vh;
+}
+
+.form-group {
+text-align: left; margin-bottom: 10px; position: relative;
+}
+
+
+label {
+font-size: 14px; color: #555;
+}
+        
+input {
+width: 100%; padding: 10px 35px 10px 10px; margin-top: 5px; border: 1px solid #ccc;
+border-radius: 5px; font-size: 16px; transition: border 0.3s;
+}
+        
+input:focus { 
+border-color: #6C63FF; outline: none; 
+}
+        
+.btn {
+background: #000000; color: white; border: none; padding: 12px;
+width: 100%; margin-top: 10px;; cursor: pointer;
+transition: 0.3s; font-weight: 600;
+}
+        
+.btn:hover {
+background: #fcfcfc; color: #000000; border: #000000; transform: translateY(-2px); 
+}
+        
+.social-login {
+display: flex; justify-content: space-between; margin-top: 10px;
+}
+        
+.social-login button {
+flex: 1; padding: 10px; margin: 5px; border: none; border-radius: 5px;
+cursor: pointer; color: white; font-size: 14px; transition: 0.3s;
+}
+        
+.social-login button:hover { 
+transform: translateY(-2px); 
+}
+        
+.google { background: #db4437; }
+        
+.facebook { background: #4267B2; }
+        
+.apple { background: #333; }
+        
+.switch-link { text-decoration: none; color: #6C63FF; display: block; margin-top: 15px; }
+        
+.switch-link:hover { text-decoration: underline; }
+        
+        
+/* Password toggle */
+        
+.password-input-container {
+position: relative;
+display: flex;
+align-items: center;
+}
+        
+.password-input-container input {
+padding-right: 40px; /* leave space for the eye icon */
+}
+
+    
+/* Success Notification */
+        
+.success-notification {
+position: fixed; top: 20px; left: 50%; transform: translateX(-50%) translateY(-100px); background: #4BB543;
+color: white; padding: 15px 25px; border-radius: 5px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+display: flex; align-items: center; z-index: 1000; opacity: 0; transition: all 0.5s ease;
+}
+
+.success-notification.show {
+opacity: 1; transform: translateX(-50%) translateY(0);
+}
+        
+.success-notification i {
+margin-right: 10px; font-size: 20px;
+}

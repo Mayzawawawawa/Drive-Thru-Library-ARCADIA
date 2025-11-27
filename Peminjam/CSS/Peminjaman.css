@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+.header {
+    width: 100%;
+    padding: 20px;
+    background: #000;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+.container {
+    padding: 20px;
+}
+
+#searchBar {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 30fr));
+    gap: 30px;
+}
+
+.book-card {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;   
+    background: white;
+}
+
+.book-card:hover {
+    background: #f1f1f1;
+}
+
+.book-card.selected {
+    background: #a0a09f;
+    color: #fff;
+    border-color: #000;
+}
+
+/* COVER IMAGE */
+.book-card img.cover {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.booking-btn {
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background: #ccc;
+    cursor: not-allowed;
+    transition: 0.3s;
+}
+
+.booking-btn.active {
+    background: black;
+    color: white;
+    cursor: pointer;
+}

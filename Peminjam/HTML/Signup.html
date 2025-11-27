@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Arcadia</title>
+
+    <link rel="stylesheet" href="../CSS/Login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Firebase + Signup JS -->
+    <script type="module" src="../JS/Firebase.js"></script>
+    <script type="module" src="../JS/Signup.js"></script>
+</head>
+
+<body>
+    <div class="auth-container">
+        <h2>Sign Up to Arcadia</h2>
+
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="email_peminjam">Email</label>
+                <input type="email" id="email_peminjam" placeholder="Masukkan email anda disini" required />
+            </div>
+
+            <div class="form-group">
+                <label for="user_peminjam">Username</label>
+                <input type="text" id="user_peminjam" placeholder="Masukkan username anda disini" required />
+            </div>
+
+            <div class="form-group">
+                <label for="nama_peminjam">Nama Lengkap</label>
+                <input type="text" id="nama_peminjam" placeholder="Masukkan nama anda" required />
+            </div>
+
+            <div class="form-group">
+                <label for="password_peminjam">Password</label>
+                <input type="password" id="password_peminjam" placeholder="Masukkan password" required />
+            </div>
+
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+
+        <div class="success-notification" id="successNotification">
+            <i class="fas fa-check-circle"></i>
+            <span>Sign up successful! Redirecting to Login...</span>
+        </div>
+    </div>
+</body>
+</html>

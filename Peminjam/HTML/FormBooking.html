@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Booking - Arcadia</title>
+
+    <link rel="stylesheet" href="../CSS/FormBooking.css">
+
+    <!-- FIREBASE -->
+    <script type="module" src="../JS/Firebase.js"></script>
+    <script type="module" src="../JS/FormBooking.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Booking Buku Arcadia</h1>
+    </header>
+
+    <div class="container">
+        <div class="book-section">
+            <h2>Buku Dipilih</h2>
+            <div id="selectedBooksContainer"></div>
+        </div>
+
+        <hr>
+
+
+        <h2>Data Peminjam</h2>
+        <form id="bookingForm">
+
+            <div class="form-group">
+                <label>Nama Peminjam</label>
+                <input type="text" id="nama_peminjam" required />
+            </div>
+
+            <div class="form-group">
+                <label>Email Peminjam</label>
+                <input type="email" id="email_peminjam" readonly />
+            </div>
+
+            <div class="form-group">
+                <label>Tanggal Pinjam</label>
+                <input type="date" id="tgl_pinjam" required />
+            </div>
+
+            <div class="form-group">
+                <label>Tanggal Ambil</label>
+                <input type="datetime-local" id="tgl_ambil" required />
+            </div>
+
+            <div class="form-group">
+                <label>Tanggal Pengembalian (Auto H+30)</label>
+                <input type="datetime-local" id="tgl_kembali" readonly />
+            </div>
+
+            <button type="submit" class="submit-btn">KIRIM PEMINJAMAN</button>
+
+        </form>
+    </div>
+    
+    <div id="popupSuccess" class="popup hide">
+        <div class="popup-content">
+            <h2>Peminjaman Tersimpan!</h2>
+            <p>Permintaanmu sedang diproses oleh Admin Arcadia.</p>
+            <button id="closePopup">Tutup</button>
+        </div>
+    </div>
+
+</body>
+</html>
